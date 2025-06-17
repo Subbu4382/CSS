@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+
+        .navbar {
+            background-color:white;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            font-size:medium;
+            padding: 18px;
+            z-index: 1;
+            letter-spacing: 4px;
+            box-shadow: 3px 3px 5px silver;
+
+        }
+
+        .navbar .navleft {
+            float: left;
+        }
+
+        .navbar .navright {
+            float: right;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            padding: 20px;
+            color: black;
+            
+            /* font-family:serif; */
+        }
+        .navbar a:hover{
+            background-color:lightgray;
+            padding: 10px;
+        }
+
+        .burgerimg {
+            position: relative;
+        }
+
+        .burgerimg>pre {
+            position: absolute;
+            left: 2%;
+            bottom: 4%;
+        }
+
+        .burgerimg>img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* .flo {
+            margin: 5% 15%;
+        } */
+
+        .flocontent>h1,
+        h5,
+        p {
+            margin: 6%;
+            font-size: 15px;
+            /* letter-spacing: 1px; */
+            /* text-align: center; */
+            align-items: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+        .flocontent>h5{
+            color: rgb(94, 87, 87);
+        }
+
+        /* .flocontent{
+            margin:10%;
+        } */
+        .aboutpage {
+            display: flex;
+            justify-content: center;
+
+            gap: 10px;
+            margin: 10% 0;
+        }
+
+        .mainpage {
+            /* margin-left: 15%;
+            margin-right: 15%; */
+            margin: 5% 15%;
+            
+        }
+
+        .ourmenu {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin: 100px 0;
+        }
+
+        .menucontent {
+            max-width: 500px;
+        }
+
+        /* .menucontent h1 {
+            margin-bottom: 30px;
+        } */
+
+        .menucontent h3 {
+            font-size: 20px;
+            margin: 50px 0 5px 0;
+        }
+
+        .menucontent p {
+            font-size: 13px;
+            margin: 20px 0 15px 0;
+            color:rgb(138, 131, 131);
+        }
+        form input{
+            width: 100%;
+            padding: 25px;
+            border: none;
+        }
+        button{
+            padding: 12px;
+            margin: 25px 0;
+            cursor: pointer;
+        }
+        .contact p{
+            margin: 20px 0 15px 0;
+        }
+        .contact>h1{
+            margin: 100px 0 60px 0;
+        }
+        .contact>h3{
+            color: rgb(33, 111, 142);
+        }
+        footer>p{
+            text-align: center;
+            color:black;
+            padding: 50px;
+            margin-bottom: 0;
+        }
+        footer a{
+            color: white;
+        }
+        h1,h3,h5{
+            letter-spacing: 4px;
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navleft">
+            <a href="#">Gourmet au Catering</a>
+        </div>
+        <div class="navright">
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    <div class="burgerimg">
+        <img src="https://www.w3schools.com/w3images/hamburger.jpg" alt="">
+        <pre style="font-size: 35px;color: gray;">L e   C a t e r i n g</pre>
+    </div>
+
+
+    <div class="mainpage">
+        <div class="aboutpage" id="about">
+            <div class="flo">
+                <img src="https://www.w3schools.com/w3images/tablesetting2.jpg" width="500px" alt="">
+            </div>
+            <div class="flocontent">
+                <h1 style="font-size: 40px; text-align: center; font-weight: normal;">About Catering</h1>
+                <h5 style="text-align: center;">Tradition since 1889</h5>
+                <p>The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute
+                    iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only
+                    use
+                    seasonal ingredients.</p>
+                <p style="color:rgb(148, 138, 138);">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                    laborum
+                    consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut
+                    enim ad
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="ourmenu"  id="menu">
+
+            <div class="menucontent">
+                <h1 style="text-align: center; font-size: 40px;font-weight: normal;">Our Menu</h1>
+                <h3>Bread Basket</h3>
+                <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+                <h3>Honey Almond Granola with Fruits</h3>
+                <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+                <h3>Belgian Waffle</h3>
+                <p>Vanilla flavored batter with malted flour 7.50</p>
+                <h3>Scrambled eggs</h3>
+                <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+                <h3>Blueberry Pancakes</h3>
+                <p>With syrup, butter and lots of berries 8.50</p>
+            </div>
+            <div class="menuimg">
+                <img src="https://www.w3schools.com/w3images/tablesetting.jpg" width="500px" alt="">
+            </div>
+        </div>
+
+        <hr>
+        <div class="contact" id="contact">
+            <h1>Contact</h1>
+            <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater
+                the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact
+                us.</p>
+            <h3>Catering Service, 42nd Living St, 43043 New York, NY</h3>
+            <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+            <form action=""></form>
+        </div>
+        <form action="">
+            <input type="text" required placeholder="Name" ><br><hr>
+            <input type="text" required placeholder="How Many People"><br><hr>
+            <input type="datetime-local"><br><hr>
+            <input type="text" placeholder="Message\Special Requirements"><br><hr>
+            <button>Send Message</button>
+
+        </form>
+    </div>
+    <footer style="background-color:lightgray; ">
+        <p>Powered by <a href="">@Subbu</a></p>
+    </footer>
+</body>
+
+</html>
