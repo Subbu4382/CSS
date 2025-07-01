@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Media Queries</title>
     <style>
         * {
             box-sizing: border-box;
@@ -131,6 +131,7 @@
         @media (min-width:425px) and (max-width:768px) {
         body{
             background-color:rgb(211, 235, 235);
+            overflow-x: hidden;
         }
         .navbar{
             display:block;
@@ -188,6 +189,7 @@
         @media (min-width:320px) and (max-width:425px){
         body{
             background-color: rgb(222, 239, 245);
+            overflow-x: hidden;
         }
         .navbar{
             display:block;
@@ -208,6 +210,26 @@
             display:block;
             width: 100%;
             margin: 2%;
+        }
+        button {
+            padding: 15px;
+            margin: 0% 1% 2% 5%;
+            width: 90%;
+        }
+        footer>p{
+            padding: 20px;
+        }
+        footer a{
+            color:red;
+        }
+        .navbar a:hover{
+            background-color:lightgrey;
+        }
+        .sd{
+            margin:0 0 0 4%;
+        }
+        button:hover{
+            background-color:lightgray;
         }
         }
 
