@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Media Queries</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <style>
         * {
             box-sizing: border-box;
@@ -126,19 +127,13 @@
         .navbar a:hover {
             background-color: gray;
         }
-
-        /* img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        } */
-        @media (max-width:768px) {
+        
+        @media (min-width:425px) and (max-width:768px) {
         body{
-            background-color:rgb(219, 231, 231);
+            background-color:rgb(211, 235, 235);
         }
         .navbar{
-            display: flex;
-            flex-direction: column;
+            display:block;
             align-items:start;
         }
         .navbar .left,.navbar .right{
@@ -152,12 +147,12 @@
             font-size: 6vw;
         }
         .photo1 div{
-            display: block;
-            width: 100%;
-            margin: 2%;
+            /* display: block; */
+            width: 47%;
+            margin: 1%;
         }
         .abso{
-            padding: 20px;
+            padding: 10px;
         }
         h3{
             font-size: 16px;
@@ -190,9 +185,35 @@
         }
 
         }
+        @media (min-width:320px) and (max-width:425px){
+        body{
+            background-color: rgb(222, 239, 245);
+        }
+        .navbar{
+            display:block;
+            align-items:start;
+            background-color: rgb(246, 240, 240);
+        }
+        .navbar .left,.navbar .right{
+            float: none;
+        }
+        .navbar a{
+            display: block;
+            padding:5px;
+        }
+         #pos{
+            font-size: 5vw;
+        }
+        .photo1 div{
+            display:block;
+            width: 100%;
+            margin: 2%;
+        }
+        }
 
     </style>
 </head>
+    
 
 <body>
 
@@ -322,5 +343,4 @@
         <p>Powered by <a href="">@Subbu</a></p>
     </footer>
 </body>
-
 </html>
